@@ -1,0 +1,93 @@
+{
+  "name": "turbo_adc_electron",
+  "productName": "turbo_adc_electron",
+  "version": "1.0.0",
+  "description": "My Electron application description",
+  "main": ".webpack/main",
+  "scripts": {
+    "start": "electron-forge start",
+    "package": "electron-forge package",
+    "make": "electron-forge make",
+    "publish": "electron-forge publish",
+    "lint": "echo \"No linting configured\""
+  },
+  "keywords": [],
+  "author": {
+    "name": "Mick Hilhorst",
+    "email": "mick.hilhorst@gmail.com"
+  },
+  "license": "MIT",
+  "config": {
+    "forge": {
+      "packagerConfig": {},
+      "makers": [
+        {
+          "name": "@electron-forge/maker-squirrel",
+          "config": {
+            "name": "turbo_adc_electron"
+          }
+        },
+        {
+          "name": "@electron-forge/maker-zip",
+          "platforms": [
+            "darwin"
+          ]
+        },
+        {
+          "name": "@electron-forge/maker-deb",
+          "config": {}
+        },
+        {
+          "name": "@electron-forge/maker-rpm",
+          "config": {}
+        }
+      ],
+      "plugins": [
+        [
+          "@electron-forge/plugin-webpack",
+          {
+            "mainConfig": "./webpack.main.config.js",
+            "renderer": {
+              "config": "./webpack.renderer.config.js",
+              "entryPoints": [
+                {
+                  "html": "./src/index.html",
+                  "js": "./src/renderer.js",
+                  "name": "main_window",
+                  "preload": {
+                    "js": "./src/preload.js"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      ]
+    }
+  },
+  "devDependencies": {
+    "@babel/core": "^7.18.6",
+    "@babel/preset-react": "^7.18.6",
+    "@electron-forge/cli": "^6.0.0-beta.64",
+    "@electron-forge/maker-deb": "^6.0.0-beta.64",
+    "@electron-forge/maker-rpm": "^6.0.0-beta.64",
+    "@electron-forge/maker-squirrel": "^6.0.0-beta.64",
+    "@electron-forge/maker-zip": "^6.0.0-beta.64",
+    "@electron-forge/plugin-webpack": "^6.0.0-beta.64",
+    "@vercel/webpack-asset-relocator-loader": "^1.7.0",
+    "autoprefixer": "^10.4.7",
+    "babel-loader": "^8.2.5",
+    "css-loader": "^6.7.1",
+    "electron": "19.0.8",
+    "node-loader": "^2.0.0",
+    "postcss": "^8.4.14",
+    "postcss-loader": "^7.0.1",
+    "style-loader": "^3.3.1",
+    "tailwindcss": "^3.1.6"
+  },
+  "dependencies": {
+    "electron-squirrel-startup": "^1.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
