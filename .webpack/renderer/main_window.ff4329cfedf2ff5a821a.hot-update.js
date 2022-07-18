@@ -11,8 +11,12 @@ self["webpackHotUpdateturbo_adc_electron"]("main_window",{},
 /******/ function(__webpack_require__) { // webpackRuntimeModules
 /******/ /* webpack/runtime/getFullHash */
 /******/ (() => {
-/******/ 	__webpack_require__.h = () => ("5cad63c8f0df1d72e9c0")
+/******/ 	__webpack_require__.h = () => ("a76dfd985b0971ef7942")
 /******/ })();
+/******/ 
+/******/ /* webpack/runtime/compat */
+/******/ 
+/******/ if (typeof __webpack_require__ !== 'undefined') __webpack_require__.ab = "C:\\Coding\\Personal\\Turbo_ADC_Electron\\TurboADC_Electron\\.webpack\\renderer" + "/native_modules/";
 /******/ 
 /******/ }
 );
