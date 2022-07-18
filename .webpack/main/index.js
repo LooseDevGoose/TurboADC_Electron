@@ -982,7 +982,7 @@ const createWindow = () => {
     width: 1200,
     height: 1000,
     webPreferences: {
-      preload: 'X:\\Python Projects\\Personal Projects\\TurboADC_Electron\\TurboADC_Electron\\.webpack\\renderer\\main_window\\preload.js',
+      preload: 'C:\\Coding\\Personal\\Turbo_ADC_Electron\\TurboADC_Electron\\.webpack\\renderer\\main_window\\preload.js',
       nodeIntegration: true
     }
   }); // and load the index.html of the app.
