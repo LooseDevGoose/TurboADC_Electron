@@ -34,7 +34,7 @@ function Login_Page(){
                 <div class="flex justify-center">
                   <img
                     class="rounded-full block"
-                    src="C:\Coding\Personal\Turbo_ADC_Electron\turbo_adc_electron\src\images\Logo.png"
+                    src="C:\Coding\Personal\Turbo_ADC_Electron\TurboADC_Electron\src\Components\images\Logo.png"
                   ></img>
                 </div>
                 <div class="mb-4">

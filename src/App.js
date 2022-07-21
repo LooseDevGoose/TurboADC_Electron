@@ -21,7 +21,7 @@ function App() {
      <Dashboard_Page/>
     </>
   } />
-  
+
   </Routes>
 </HashRouter>
   );
