@@ -21,6 +21,8 @@ function App() {
      <Dashboard_Page/>
     </>
   } />
+
+  <Route path="/" element={<Login_Page/>} />
   
   </Routes>
 </HashRouter>
