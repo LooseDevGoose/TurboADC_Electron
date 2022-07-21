@@ -15,17 +15,13 @@ function App() {
 
     <Route path="/Login" element={<Login_Page/>} />
 
-    <Route path="/Dashboard" element={
-    <>
-     <Sidebar/>
-     <Dashboard_Page/>
-    </>
-  } />
+    <Route path="/Dashboard" element={<Dashboard_Page/>} />
 
   </Routes>
 </HashRouter>
   );
 }
+
 
 
 

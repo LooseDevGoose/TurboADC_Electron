@@ -27,7 +27,7 @@ function Login_Page(){
 
     return(
         <div class="grid grid-cols-1 h-screen">
-        <div class="bg-gradient-to-br from-blue-400 to-slate-800 bg">
+        <div class="bg-gradient-to-br from-blue-400 to-slate-800">
           <div class="grid h-screen place-items-center">
             <div class="w-full max-w-md">
               <form class="bg-white shadow-2xl px-8 pt-6 pb-8 mb-4 rounded">

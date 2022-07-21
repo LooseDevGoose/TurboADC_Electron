@@ -8,9 +8,14 @@ import Sidebar from "../Components/Sidebar";
 function Dashboard_Page(){
     const nav = useNavigate();
     return(
-       
-        <button class=" border-green-500 border-2" onClick={() => {nav("/Login")}}>Logout</button>
-    
+    <div class="flex bg-slate-200 h-screen">
+        {/* Navbar */}
+       <div class="w-60 rounded-xl"><Sidebar/></div>
+       {/* Main container */}
+        <div class="h-screen bg-gray-200 flex-auto">
+            <button class=" border-green-500 border-2 h-7" onClick={() => {nav("/Login")}}>Logout</button>
+        </div>
+    </div>
     );
 };
 
