@@ -15,20 +15,8 @@ function App() {
 
     <Route path="/Login" element={<Login_Page/>} />
 
-<<<<<<< HEAD
-    <Route path="/Dashboard" element={
-    <>
-     <Sidebar/>
-     <Dashboard_Page/>
-    </>
-  } />
-
-  <Route path="/" element={<Login_Page/>} />
-  
-=======
     <Route path="/Dashboard" element={<Dashboard_Page/>} />
 
->>>>>>> 1833bc6fdee6e1af0d02559eae0e611d6aa15431
   </Routes>
 </HashRouter>
   );
