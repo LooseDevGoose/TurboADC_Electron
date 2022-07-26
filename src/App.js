@@ -13,9 +13,9 @@ function App() {
   <Routes>
     <Route exact path="/" element={<Login_Page/>} />
 
-    <Route path="/Login" element={<Login_Page/>} />
+    {/* <Route path="/Login" element={<Login_Page/>} />
 
-    <Route path="/Dashboard" element={<Dashboard_Page/>} />
+    <Route path="/Dashboard" element={<Dashboard_Page/>} /> */}
 
   </Routes>
 </HashRouter>
